@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaChic</title>
+    
+    <!-- ================= Favicon ================= -->
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/itzikgur/my-seven/256/Girls-Blue-Dress-icon.png" type="image/x-icon">
+    
+    <!-- ================= CSS PERSONNALISÉ ================= -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ================= BOOTSTRAP CSS ================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ================= FONT AWESOME POUR ICONES ================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <!-- Contient le nom de la boutique et le menu de navigation vers les différentes sections -->
+    <header>
+        <h1>MaChic</h1>
+        <nav>
+            <ul>
+                <li><a href="#heroCarousel">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO CAROUSEL ================= -->
+    <!-- Section principale avec un carousel de 3 images promotionnelles -->
+    <!-- Chaque slide contient une image et une légende avec titre et slogan -->
+    <section class="hero-carousel">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            
+            <!-- Indicateurs du carousel -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Slides du carousel -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="c1.png" class="d-block w-100" alt="image carousel">
+                    <div class="carousel-caption">
+                        <h2>MaChic</h2>
+                        <p>Chic par nature, magique par essence</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="im.jpg" class="d-block w-100" alt="image carousel">
+                    <div class="carousel-caption">
+                        <h2>Nouvelle Collection</h2>
+                        <p>Des robes pour chaque occasion</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="c11.png" class="d-block w-100" alt="image carousel">
+                    <div class="carousel-caption">
+                        <h2>Style & Prestige</h2>
+                        <p>L’élégance au féminin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contrôles du carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ================= SECTION PRODUITS ================= -->
+    <!-- Affiche la collection de produits avec image, nom, description et bouton d'achat -->
+    <section class="products container" id="produits">
+        <h2>Nouvelle Collection</h2>
+
+        <div class="product-grid">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <img src="im1.jpg" alt="Robe Azza Slimene Joy Awards 2025">
+                <h3>Robe de soirée</h3>
+                <p>Un design élégant en noir et doré, alliant raffinement et prestige.</p>
+                <p><strong>Prix: 879 dt</strong></p>
+                <button class="btn btn-dark w-100">Acheter maintenant</button>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <img src="im3.png" alt="Robe Amina Khalil rose">
+                <h3>Robe Rose Élégant</h3>
+                <p>Sublime robe avec une coupe féminine et moderne. Parfait pour une soirée chic.</p>
+                <p><strong>Prix: 469 dt</strong></p>
+                <button class="btn btn-dark w-100">Acheter maintenant</button>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="product-card">
+                <img src="im2.png" alt="Robe Hana Ezzahid rose clair brillante">
+                <h3>Robe Rose Brillante</h3>
+                <p>Robe raffinée en rose clair lumineux avec finition brillante. Élégance et modernité.</p>
+                <p><strong>Prix: 500 dt</strong></p>
+                <button class="btn btn-dark w-100">Acheter maintenant</button>
+            </div>
+
+            <!-- Produit 4 -->
+            <div class="product-card">
+                <img src="im4.png" alt="Robe Azza Slimene Joy Awards 2024">
+                <h3>Robe de soirée</h3>
+                <p>Robe noire sophistiquée, modèle intemporel et élégant pour une allure chic et puissante.</p>
+                <p><strong>Prix: 739 dt</strong></p>
+                <button class="btn btn-dark w-100">Acheter maintenant</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Contient la marque, les liens de navigation, les contacts et les icônes réseaux sociaux -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- Branding -->
+                <div class="col-md-4 footer-brand">
+                    <h3>MaChic</h3>
+                    <p>Chic par nature, magique par essence.</p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="col-md-4 footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#heroCarousel"><i class="fa-solid fa-house"></i> Accueil</a></li>
+                        <li><a href="#produits"><i class="fa-solid fa-bag-shopping"></i> Produits</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact et Reseaux sociaux -->
+                <div class="col-md-4 footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fa-solid fa-phone"></i> +216 23 875 235</p>
+                    <p><i class="fa-solid fa-envelope"></i> contact@machic.tn</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <p class="copyright text-center">
+                &copy; 2025 MaChic — Tous droits réservés
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================= BOOTSTRAP JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

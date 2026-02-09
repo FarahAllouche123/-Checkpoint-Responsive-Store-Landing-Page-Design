@@ -1,0 +1,264 @@
+
+/* ================= GLOBAL ================= */
+body {
+    background: #f8f0f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER & FOOTER ================= */
+header,footer {
+    background-color: #930078;
+    color: white;
+}
+
+/* ================= HEADER ================= */
+header {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ====================================== PRODUITS ======================================= */
+.products {
+    padding: 40px 20px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #b01295;
+    font-weight: bold;
+}
+
+              /* ================= GRID ================= */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+              /* ================= PRODUCT CARD ================= */
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #f1c6e4;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+     box-shadow: 0 4px 10px rgba(234, 8, 189, 0.445);
+}
+
+                /* ================= IMAGE ================= */
+.product-card img {
+    width: 100%;
+    height: 510px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+               /* ================= TEXT ================= */
+.product-card h3 {
+    margin: 15px 0 10px;
+    color: #da14b6;
+    font-weight: bold;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+                /* ================= BUTTON ================= */
+.product-card button {
+    background-color: #da14b6;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.product-card button:hover {
+    background-color: #b01295;
+}
+
+/* ================= HERO CAROUSEL ================= */
+.hero-carousel {
+    margin-bottom: 40px;
+}
+
+.carousel-item img {
+    height: 550px;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.carousel-caption {
+    background-color: rgba(218, 20, 182, 0.6);
+    padding: 20px 30px;
+    border-radius: 20px;
+    
+}
+
+.carousel-caption h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+/* ================= FOOTER ================= */
+.footer {
+  color: #fff;
+  padding: 50px 0 20px;
+  margin-top: 60px;
+}
+
+.footer h3,.footer h4 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 0.95rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links i {
+  margin-right: 8px;
+}
+
+.footer-links a:hover {
+  color: #2c2c2c;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 1.3rem;
+  margin-right: 12px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #2c2c2c;
+}
+
+.footer .copyright {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+   
+    .product-card img {
+    height: 650px;
+  }
+
+    
+    .footer {
+        text-align: center;
+    }
+
+    .footer .row {
+        text-align: center;
+    }
+
+    .footer-links ul {
+        padding: 0;
+    }
+
+    .footer-links ul li {
+        display: block;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
